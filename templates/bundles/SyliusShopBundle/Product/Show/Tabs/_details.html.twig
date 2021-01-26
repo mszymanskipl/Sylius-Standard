@@ -1,0 +1,7 @@
+<div class="ui bottom attached tab segment active" data-tab="details">
+    {% if _context.product.color %}
+        <strong>{% trans %}app.form.product.color.label{% endtrans %}:</strong> {{ ('app.form.product.color.choices.' ~ _context.product.color) | trans }}<br />
+    {% endif %}
+
+    {{ sylius_template_event('sylius.shop.product.show.tab_details', _context) }}
+</div>

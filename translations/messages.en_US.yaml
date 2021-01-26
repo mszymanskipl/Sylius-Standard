@@ -1,0 +1,9 @@
+app:
+    form:
+        product:
+            color:
+                label: 'Color'
+                choices:
+                    red: 'Red'
+                    green: 'Green'
+                    blue: 'Blue'
